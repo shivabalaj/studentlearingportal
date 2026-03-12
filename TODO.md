@@ -1,51 +1,7 @@
-# Student Learning Portal Deployment TODO
+# Fix Backend Render Deployment "Cannot GET" Error
 
-## Status: [ ] In Progress
-
-### 1. [ ] Create Render Account
-- Sign up at https://render.com with GitHub (repo: shivabalaj/studentlearingportal ready)
-
-### 2. [ ] Deploy Backend (Web Service)
-- New+ → Web Service → Connect repo
-- Name: `student-portal-backend`
-- Root Directory: `backend`
-- Environment: Node
-- Build Command: `npm install`
-- Start Command: `npm start`
-- Plan: Free
-- **Environment Variables*:
-  | Key | Value |
-  |-----|-------|
-  | `MONGO_URI` | `mongodb://chandrashekar:balaji123b@ac-lyvutqh-shard-00-00.tdp4abz.mongodb.net:27017,...` (your Atlas URI, whitelist Render IPs if needed) |
-  | `JWT_SECRET` | Generate strong secret (e.g., `openssl rand -base64 32`) |
-- Click Create → Wait for build → Note URL: `https://student-portal-backend.onrender.com`
-- Test: `/health`, `/api/courses`
-
-### 3. [ ] Deploy Frontend (Static Site)
-- New+ → Static Site → Connect repo
-- Name: `student-portal-frontend`
-- Root Directory: `frontend`
-- Build Command: `npm run build`
-- Publish Directory: `build`
-- **Environment Variable**:
-  | Key | Value |
-  |-----|-------|
-  | `REACT_APP_API_URL` | `https://student-portal-backend.onrender.com` (your backend URL)
-- Click Create → Wait for build → Note URL: `https://student-portal-frontend.onrender.com`
-- Test full app
-
-### 4. [x] Verify & Seed Data (Local)
-- Run `node backend/seed-admin.js` locally to seed admin/data if needed
-
-### 5. [ ] Update README.md
-```
-Frontend: https://student-portal-frontend.onrender.com
-Backend API: https://student-portal-backend.onrender.com
-Admin: /admin (login needed)
-```
-
-**Notes**:
-- Free tier sleeps after inactivity (15min cold start).
-- MongoDB Atlas: Network Access → Add Render IP if connection fails.
-- No code changes needed—repo clean & pushed.
-
+## Steps:
+- [x] 1. Add root '/' GET route handler in backend/server.js to return API status/info.
+- [ ] 2. **Next: Commit/push to your Render-linked repo** (e.g., `git add . && git commit -m "fix: add root route for Render" && git push`). Redeploy will trigger automatically.
+- [ ] 3. Verify root URL on Render returns proper response instead of "Cannot GET".
+- [ ] 4. Test API endpoints like /api/courses.

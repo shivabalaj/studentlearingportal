@@ -42,6 +42,18 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+// Root route to fix "Cannot GET /" on Render deployment
+app.get('/', (req, res) => {
+  res.json({
+    message: 'API Server is running!',
+    endpoints: {
+      courses: '/api/courses',
+      auth: '/api/auth (signup, login)',
+      admin: '/api/admin (protected)'
+    }
+  });
+});
+
 // Start server
 const PORT = process.env.PORT || 5000;
 
