@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,7 +19,7 @@ function Login() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/auth/login", {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,7 +1,12 @@
 # Fix Backend Render Deployment "Cannot GET" Error
 
 ## Steps:
-- [x] 1. Add root '/' GET route handler in backend/server.js to return API status/info.
-- [ ] 2. **Next: Commit/push to your Render-linked repo** (e.g., `git add . && git commit -m "fix: add root route for Render" && git push`). Redeploy will trigger automatically.
-- [ ] 3. Verify root URL on Render returns proper response instead of "Cannot GET".
-- [ ] 4. Test API endpoints like /api/courses.
+- [x] 1. Add root '/' GET route handler in backend/server.js ✓ Backend "Cannot GET" fixed (confirmed).
+- [x] 2. Commit/push done (user deployed).
+- [x] 3. Root returns JSON ✓.
+- [ ] 4. **Frontend fetch fix:**
+  - Updated login/signup.js to use API_URL.
+  - All fetches now `process.env.REACT_APP_API_URL || localhost:5000`.
+  - **Set on Render frontend dashboard > Environment > Add Var: `REACT_APP_API_URL=https://your-backend.onrender.com`**
+  - Push/redeploy frontend.
+  - Test courses load.
