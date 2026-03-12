@@ -1,0 +1,19 @@
+/* Bootstrap Navbar - Minimal custom overrides */
+
+/* Ensure smooth transitions */
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+/* Custom hover for admin link */
+.navbar-nav .bg-danger:hover {
+  background-color: #c82333 !important;
+  transform: translateY(-1px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+/* Bootstrap Cards - Custom enhancements */
+
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Ensure consistent card heights */
+.card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

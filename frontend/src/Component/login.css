@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+  size: 140px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input{
+  size: 80px;
+
+}
+form{
+  box-shadow: 4px 6px  #184db7;
+}
+input{
+  width: 300px;
+}
+.App form{
+  size: 140px;
+}
+button {
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+}
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+button:hover {
+  background-color: #4dbcd6;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ff6b6b;
+}
+
+/* Welcome text in navbar */
+.welcome-text {
+  color: #61dafb;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* Logout button */
+.logout {
+  background-color: #ff6b6b !important;
+  color: white !important;
+}
+
+.logout:hover {
+  background-color: #e55a5a !important;
+}

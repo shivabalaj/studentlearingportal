@@ -1,0 +1,117 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "courseName": "React JS",
+      "trainer": "durga prasad",
+      "price": "$99",
+      "level": "Beginner",
+      "thumbnail": "https://picsum.photos/seed/react/300/200",
+      "videos": [
+        {
+          "videoId": "1",
+          "title": "Introduction to React Hooks",
+          "description": "Learn the fundamentals of React Hooks including useState, useEffect, and custom hooks.",
+          "google_drive_file_id": "1RkLEin5fS-fZvc3U2yiviFOwpo9pE5Lx",
+          "duration": "45:20",
+          "instructor": "Dr. Sarah Johnson",
+          "views": 1234
+        },
+        {
+          "videoId": "2",
+          "title": "React Components Deep Dive",
+          "description": "Understanding class components vs functional components in React.",
+          "google_drive_file_id": "1RkLEin5fS-fZvc3U2yiviFOwpo9pE5Lx",
+          "duration": "55:30",
+          "instructor": "Dr. Sarah Johnson",
+          "views": 890
+        },
+        {
+          "videoId": "3",
+          "title": "State Management in React",
+          "description": "Learn about Redux, Context API, and other state management solutions.",
+          "google_drive_file_id": "1RkLEin5fS-fZvc3U2yiviFOwpo9pE5Lx",
+          "duration": "70:15",
+          "instructor": "Dr. Sarah Johnson",
+          "views": 1567
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "courseName": "Python Basics",
+      "trainer": "tharun",
+      "price": "$79",
+      "level": "Beginner",
+      "thumbnail": "https://picsum.photos/seed/python/300/200",
+      "videos": [
+        {
+          "videoId": "4",
+          "title": "Python Introduction",
+          "description": "Getting started with Python programming basics.",
+          "google_drive_file_id": "1gBJna4ofLXdYI2cV-meUSI-YjPC4Zces",
+          "duration": "40:00",
+          "instructor": "Prof. Michael Chen",
+          "views": 2341
+        },
+        {
+          "videoId": "5",
+          "title": "Python Data Types",
+          "description": "Understanding strings, lists, dictionaries, and more.",
+          "google_drive_file_id": "1gBJna4ofLXdYI2cV-meUSI-YjPC4Zces",
+          "duration": "58:15",
+          "instructor": "Prof. Michael Chen",
+          "views": 1890
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "courseName": "Node.js",
+      "trainer": "joseph",
+      "price": "$89",
+      "level": "Intermediate",
+      "thumbnail": "https://picsum.photos/seed/nodejs/300/200",
+      "videos": [
+        {
+          "videoId": "6",
+          "title": "Node.js Fundamentals",
+          "description": "Introduction to Node.js and npm.",
+          "google_drive_file_id": "1OPfHxpVA0xu6QL_mgfnOC7FV338Tf2xm",
+          "duration": "62:30",
+          "instructor": "Emma Rodriguez",
+          "views": 3456
+        },
+        {
+          "videoId": "7",
+          "title": "Express.js Tutorial",
+          "description": "Building web servers with Express.js.",
+          "google_drive_file_id": "1OPfHxpVA0xu6QL_mgfnOC7FV338Tf2xm",
+          "duration": "75:45",
+          "instructor": "Emma Rodriguez",
+          "views": 2789
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "courseName": "UI/UX Design",
+      "trainer": "chandra",
+      "price": "$129",
+      "level": "Intermediate",
+      "thumbnail": "https://picsum.photos/seed/uiux/300/200",
+      "videos": [
+        {
+          "videoId": "8",
+          "title": "UI/UX Basics",
+          "description": "Principles of good UI/UX design.",
+          "google_drive_file_id": "1FozYzhrHd7W_gcRjficgN9whFieX11uI",
+          "duration": "55:00",
+          "instructor": "Alex Thompson",
+          "views": 4567
+        }
+      ]
+    }
+  ]
+}
+
