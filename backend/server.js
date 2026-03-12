@@ -38,7 +38,9 @@ app.get("/api/courses", async (req, res) => {
   }
 });
 
-
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
 
 // Start server
 const PORT = process.env.PORT || 5000;
