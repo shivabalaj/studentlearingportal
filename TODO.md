@@ -4,9 +4,9 @@
 - [x] 1. Add root '/' GET route handler in backend/server.js ✓ Backend "Cannot GET" fixed (confirmed).
 - [x] 2. Commit/push done (user deployed).
 - [x] 3. Root returns JSON ✓.
-- [ ] 4. **Frontend fetch fix:**
-  - Updated login/signup.js to use API_URL.
-  - All fetches now `process.env.REACT_APP_API_URL || localhost:5000`.
-  - **Set on Render frontend dashboard > Environment > Add Var: `REACT_APP_API_URL=https://your-backend.onrender.com`**
-  - Push/redeploy frontend.
-  - Test courses load.
+- [ ] 4. **Frontend fetch fix (almost done):**
+  - Code updated ✓ All use REACT_APP_API_URL.
+  - Backend: https://studentlearingportal-backend.onrender.com/ ✓
+  - **Set Render frontend Env Var:** REACT_APP_API_URL=https://studentlearingportal-backend.onrender.com
+  - Deploy frontend.
+  - Visit frontend, courses load without "Failed to fetch".
