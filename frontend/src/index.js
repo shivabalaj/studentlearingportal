@@ -13,6 +13,8 @@ import AdminCourses from './adminpannel/AdminCourses';
 import AdminVideos from './adminpannel/AdminVideos';
 import AdminUsers from './adminpannel/AdminUsers';
 import AdminLogin from './adminpannel/AdminLogin';
+import Cards from './cards/cards';
+import About from './Component/About';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +22,17 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<App />}>
+          <Route index element={
+            <div className="container my-5">
+              <h1 className="display-4 fw-bold text-center mb-5" style={{color:'red'}}>
+                Welcome to Student Learning Portal
+              </h1>
+              <Cards />
+            </div>
+          } />
+          <Route path="about" element={<About />} />
+        </Route>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<Contact />} />

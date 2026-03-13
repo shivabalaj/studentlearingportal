@@ -9,8 +9,8 @@ function Cards() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Use environment-aware API URL
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    // Hardcode prod backend for Render static site
+    const API_URL = 'https://studentlearingportal-backend.onrender.com';
     fetch(`${API_URL}/api/courses`)
       .then((response) => {
         if (!response.ok) {
