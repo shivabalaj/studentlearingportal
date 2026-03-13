@@ -25,7 +25,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route index element={
             <div className="container my-5">
-              <h1 className="display-4 fw-bold text-center mb-5" style={{color:'red'}}>
+              <h1 className="display-4 fw-bold text-center mb-5">
                 Welcome to Student Learning Portal
               </h1>
               <Cards />
